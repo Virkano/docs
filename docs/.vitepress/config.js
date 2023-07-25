@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import algolia from './algolia'
 
 export default defineConfig({
   title: '小破站 🍉', //站点标题
@@ -66,8 +67,8 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: 'Vue.js 文章',
-                link: '/vue/index',
+                text: 'defineModel-Vue3.3(beta)',
+                link: '/vue/defineModel',
               },
             ],
           },
@@ -94,7 +95,7 @@ export default defineConfig({
             ],
           },
           {
-            text: '🥭 Nginx',
+            text: '🍌 Nginx',
             collapsible: true,
             collapsed: true,
             items: [
@@ -137,5 +138,6 @@ export default defineConfig({
         ],
       },
     ],
+    algolia,
   },
 })
