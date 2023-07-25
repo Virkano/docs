@@ -1,0 +1,20 @@
+body {
+  font-size: 16px;
+}
+
+:root {
+  --vp-c-brand: #4096ff;
+  --vp-c-brand-light: #57a9fb;
+  --vp-c-brand-lighter: #7bc0fc;
+  --vp-c-brand-dark: #206ccf;
+  --vp-c-brand-darker: #114ba3;
+  --vp-border-radius: 6px;
+}
+.VPNavBarTitle > .title > .VPImage,
+.VPHomeHero > .container > .image > .image-container > .VPImage {
+  border-radius: 50%;
+}
+
+.VPHomeFeatures > .container > .items > .item > .VPLink:hover {
+  border: 1px solid var(--vp-c-brand);
+}
