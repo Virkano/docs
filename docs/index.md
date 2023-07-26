@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /start/index
+      link: /guide
     - theme: alt
       text: Listen 👂🏻
       link: http://music.virkano.com/
