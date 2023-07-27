@@ -10,9 +10,7 @@ import Demo from './demo.vue';
 
 > 下方输入框请输入上班打卡的时间，将会自动计算下班的时间以及距离下班还有多久。
 
-<!-- <DemoContainer pkg='tool/off-time' path='demo.vue'>
-    <Demo/>
-</DemoContainer> -->
+<Demo />
 
 以上代码可做参考，应该还有很多优化的地方，欢迎 pr 提供你的想法。
 

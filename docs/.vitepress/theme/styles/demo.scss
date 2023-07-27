@@ -22,13 +22,9 @@
 
 @media (min-width: 720px) {
   .demo {
-    --width: calc(
-      100vw - var(--sidebar-width) - var(--scrollbar-width)
-    ) !important;
+    --width: calc(100vw - var(--sidebar-width) - var(--scrollbar-width)) !important;
     --content-width: min(48rem, var(--width)) !important;
-    --margin-left: calc(
-      calc(calc(var(--content-width) - var(--width)) / 2) - 1.5rem
-    ) !important;
+    --margin-left: calc(calc(calc(var(--content-width) - var(--width)) / 2) - 1.5rem) !important;
   }
 }
 
@@ -78,7 +74,7 @@
     color: var(--vp-c-disabled-fg);
     --vp-c-brand: var(--vp-c-disabled-bg);
     --vp-c-brand-dark: var(--vp-c-disabled-bg);
-    --vp-c-brand-active: rgba(125,125,125,.2);
+    --vp-c-brand-active: rgba(125, 125, 125, 0.2);
   }
 
   button:hover {
@@ -124,9 +120,9 @@
     background: var(--vp-c-bg-light);
   }
 
-  input[type="text"],
-  input[type="search"],
-  input[type="number"] {
+  input[type='text'],
+  input[type='search'],
+  input[type='number'] {
     display: block;
     font-size: 0.9rem;
     padding: 0.5em 1em 0.4em 1em;
@@ -139,7 +135,7 @@
     margin: 0.5rem 0;
   }
 
-  input[type="number"] {
+  input[type='number'] {
     min-width: 15rem;
     outline: none;
   }

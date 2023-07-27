@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: 前端杂货铺
-  text: 夏天到了～吃完再学 🍉
+  text:  🍉
   tagline:
   image:
     src: /Kano.jpg

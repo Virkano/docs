@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  text: string,
+  text: String,
   type: 'info' | 'tip' | 'warning' | 'danger',
 })
 </script>

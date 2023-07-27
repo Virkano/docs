@@ -8,8 +8,17 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Badge: typeof import('./theme/components/Badge.vue')['default']
+    'Bi:github': typeof import('~icons/bi/github')['default']
+    CustomLink: typeof import('./theme/components/CustomLink.vue')['default']
+    'Fe:youtube': typeof import('~icons/fe/youtube')['default']
     NavCard: typeof import('./theme/components/NavCard.vue')['default']
+    'Ph:planetFill': typeof import('~icons/ph/planet-fill')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    'SkillIcons:vercelDark': typeof import('~icons/skill-icons/vercel-dark')['default']
+    'Tabler:brandBilibili': typeof import('~icons/tabler/brand-bilibili')['default']
+    'Tabler:brandJuejin': typeof import('~icons/tabler/brand-juejin')['default']
+    'Teenyicons:nextjsSolid': typeof import('~icons/teenyicons/nextjs-solid')['default']
+    'Uiw:weixin': typeof import('~icons/uiw/weixin')['default']
   }
 }

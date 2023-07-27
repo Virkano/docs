@@ -10,11 +10,9 @@
 
 我们需要安装一个名为 `SwitchHosts` 的工具，可以直接从 GitHub 的 release 地址下载：
 
-[SwitchHost Releases](https://github.com/oldj/SwitchHosts/releases)
+<CustomLink title="SwitchHost Releases" href="https://github.com/oldj/SwitchHosts/releases" />
 
 大家可以根据自己电脑的机型来选择安装即可。
-
-<!-- //<CloudinaryImg publicId='tool/switchhost-download_ilseh0' alt='switchhost-download'/> -->
 
 
 在这里贴两个地址吧：
@@ -36,7 +34,5 @@ Hosts 标题：（自定义，比如 hellogithub）
 URL: https://raw.hellogithub.com/hosts
 自动刷新: 最好选 1 hour
 ```
-
-<!-- //<CloudinaryImg publicId='tool/switchhost-config_qjhkuk' alt='switchhost-config'/> -->
 
 至此，我们就可以正常访问 GitHub 了，开启你的开源之旅吧。
