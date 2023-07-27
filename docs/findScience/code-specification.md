@@ -1,4 +1,10 @@
+---
+author: "Kano Zhao"
+date: 2023-07-25
+---
 # ESLint+Prettier+Stylelint+EditorConfig 约束和统一前端代码规范
+
+<PageInfo/>
 
 ## 前言
 
@@ -354,7 +360,7 @@ SCode 插件市场搜索 ```Prettier - Code formatter``` 插件安装
 pnpm install -D prettier
 ```
 
-#### Prettier 配置
+### Prettier 配置
 
 根目录创建```.prettierrc.cjs``` 文件, （详细配置：[Prettier 中文网 - Options](https://www.prettier.cn/docs/options.html)）
 ```json
@@ -460,7 +466,7 @@ VSCode 插件搜索 ```Stylelint``` 并安装
 pnpm install -D stylelint stylelint-config-standard stylelint-config-recommended-scss stylelint-config-recommended-vue postcss postcss-html postcss-scss stylelint-config-recess-order stylelint-config-html
 ```
 
-#### Stylelint 配置
+### Stylelint 配置
 
 根目录新建 ```.stylelintrc.cjs``` 文件，配置如下：
 ```json
@@ -558,7 +564,7 @@ EditorConfig 主要用于统一不同 IDE 编辑器的编码风格。官方网�
 VSCode 搜索 ```EditorConfig for VS Code``` 插件并安装
 ![EditorConfig](./images/code-specification/editorConfig.png)
 
-#### 配置 EditorConfig
+### 配置 EditorConfig
 
 根目录创建 ```.editorconfig``` 文件，添加配置如下：
 ```json
@@ -584,3 +590,8 @@ max_line_length = off # 关闭最大行长度限制
 trim_trailing_whitespace = false # 关闭末尾空格修剪
 insert_final_newline = false
 ```
+## Contributors
+
+<Contributors/>
+
+<CopyRight/>

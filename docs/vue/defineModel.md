@@ -1,4 +1,11 @@
+---
+author: "Kano Zhao"
+date: 2023-06-20
+---
+
 # 你不知道的defineModel
+
+<PageInfo/>
 
 相信大伙都已经收到```Vue3.3```最新版的风了吧，新版本的更新中优化了不少此前在Vue3中比较“麻烦”的使用方法，下面是更新的简介图 👇
 
@@ -86,9 +93,9 @@ const count = defineModel<number>('count', { default: 0 })
 
 此功能是实验性的，需要<b>明确的选择加入</b>。
 
-* 详情： [RFC#503](https://github.com/vuejs/rfcs/discussions/503)
+<CustomLink title="详情:RFC#503-[Core Team RFC] New SFC macro: defineModel #503" href="https://github.com/vuejs/rfcs/discussions/503" />
 
-* [原文地址:](https://blog.vuejs.org/posts/vue-3-3)
+<CustomLink title="原文地址:Today we're excited to announce the release of Vue 3.3 'Rurouni Kenshin'" href="https://blog.vuejs.org/posts/vue-3-3" />
 
 相信看完上面的案例之后大伙就已经有一个大概的猜想了：
 
@@ -97,3 +104,9 @@ const count = defineModel<number>('count', { default: 0 })
 上面的猜测又包含了两个问题：
 > 1. ```defineModel``` 是如何注册 ```update:modelValue``` 事件的
 > 2. 如何在 ```defineModel``` 变量修改时发布 ```update:modelValue``` 事件的
+
+## Contributors
+
+<Contributors/>
+
+<CopyRight/>

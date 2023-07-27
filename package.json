@@ -20,7 +20,10 @@
   },
   "devDependencies": {
     "@iconify-json/bi": "^1.1.17",
+    "@iconify-json/fa6-solid": "^1.1.13",
     "@iconify-json/fe": "^1.1.6",
+    "@iconify-json/ooui": "^1.1.25",
+    "@iconify-json/radix-icons": "^1.1.10",
     "@iconify-json/tabler": "^1.1.84",
     "@iconify-json/teenyicons": "^1.1.5",
     "dayjs": "^1.11.9",

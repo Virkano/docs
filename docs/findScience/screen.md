@@ -1,4 +1,10 @@
+---
+author: "Kano Zhao"
+date: 2023-07-20
+---
 # 大屏自适应解决方案
+
+<PageInfo/>
 
 ## 前言
 
@@ -140,3 +146,9 @@ export default {
 }
 
 ```
+
+## Contributors
+
+<Contributors/>
+
+<CopyRight/>

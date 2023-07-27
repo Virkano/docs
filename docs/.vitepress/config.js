@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import algolia from './algolia.js'
 import sidebar from './sidebar.js'
+import { github } from './meta'
 
 export default defineConfig({
   title: '小破站 🍉', //站点标题
@@ -26,7 +27,15 @@ export default defineConfig({
     outlineTitle: '导航栏',
     darkModeSwitchLabel: '外观',
     sidebarMenuLabel: '归档',
+    editLink: {
+      pattern: `${github}/tree/main/docs/:path`,
+      text: '在 GitHub 上编辑此页',
+    },
     lastUpdatedText: '最后一次更新于',
+    footer: {
+      message: `用心去做高质量的专业前端内容网站，欢迎 <a target="_blank" style="color: var(--vp-c-brand)" href="${github}">star ⭐</a> 让更多人发现`,
+      copyright: `<a target="_blank" href="${github}/blob/main/LICENSE">MIT License</a> | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="${github}">前端杂货铺 contributors</a>`,
+    },
     nav: [
       { text: '💭 开始阅读', link: '/guide' },
       {

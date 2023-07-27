@@ -2,7 +2,10 @@ lockfileVersion: 5.4
 
 specifiers:
   '@iconify-json/bi': ^1.1.17
+  '@iconify-json/fa6-solid': ^1.1.13
   '@iconify-json/fe': ^1.1.6
+  '@iconify-json/ooui': ^1.1.25
+  '@iconify-json/radix-icons': ^1.1.10
   '@iconify-json/tabler': ^1.1.84
   '@iconify-json/teenyicons': ^1.1.5
   dayjs: ^1.11.9
@@ -23,7 +26,10 @@ dependencies:
 
 devDependencies:
   '@iconify-json/bi': 1.1.17
+  '@iconify-json/fa6-solid': 1.1.13
   '@iconify-json/fe': 1.1.6
+  '@iconify-json/ooui': 1.1.25
+  '@iconify-json/radix-icons': 1.1.10
   '@iconify-json/tabler': 1.1.84
   '@iconify-json/teenyicons': 1.1.5
   dayjs: 1.11.9
@@ -429,8 +435,26 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
+  /@iconify-json/fa6-solid/1.1.13:
+    resolution: {integrity: sha512-4rpV5lqeerkL3PBuoIYFKtOWjEIcv2q9g+lai0jSTlgzmF/hcxkozXzhhGtEjQhYqAIPR01wxlHFIhwhLN2O9w==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
   /@iconify-json/fe/1.1.6:
     resolution: {integrity: sha512-plBJDCJuruDvO5Wva2qwW/TxdD0GW2V62tHec5bm1sn7Y7e13O7J9tOBue/FbOdH2YJon2KvEBpaE+XTPDPOOw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/ooui/1.1.25:
+    resolution: {integrity: sha512-LhyOB9BIaAlXqjWU15YGGvuLyhtfRXLH4jybPFq8J5sfrXwqLh5S7E9Js88el4yhCHQO0WhfJjC6BAENWIBSPA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/radix-icons/1.1.10:
+    resolution: {integrity: sha512-7ivY9XvUe1CWsuR1qy/icK6tfl1+Xq3sh2AqQuGHNx49VCJyXQq+RRr6bqf3u36mPPzV+C8oRlfifNt8iWK2Ew==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

@@ -1,4 +1,10 @@
+---
+author: "Kano Zhao"
+date: 2023-07-26
+---
 # Husky + Lint-staged + Commitlint + cz-git 配置 Git 提交规范
+
+<PageInfo/>
 
 ## 前言
 
@@ -42,7 +48,8 @@ pnpm dlx husky-init && pnpm install
 
 lint-staged 是一个在 git add 到暂存区的文件运行 linters (ESLint/Prettier/StyleLint) 的工具，避免在 git commit 提交时在整个项目执行。
 
-官方网站：[github.com/okonet/lint…](https://github.com/okonet/lint-staged)
+<CustomLink title="官方网站：github.com/okonet/lint…" href="https://github.com/okonet/lint-staged" />
+
 
 ### Lint-staged 安装
 
