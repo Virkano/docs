@@ -18,6 +18,7 @@ declare module 'vue' {
     NavCard: typeof import('./theme/components/NavCard.vue')['default']
     'Octicon:feedPerson16': typeof import('~icons/octicon/feed-person16')['default']
     PageInfo: typeof import('./theme/components/PageInfo.vue')['default']
+    Person: typeof import('./theme/components/person.vue')['default']
     'Ph:planetFill': typeof import('~icons/ph/planet-fill')['default']
     'RadixIcons:update': typeof import('~icons/radix-icons/update')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

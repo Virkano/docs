@@ -4,10 +4,10 @@ import sidebar from './sidebar.js'
 import { github } from './meta'
 
 export default defineConfig({
-  title: '小破站 🍉', //站点标题
+  title: '前端杂货铺 🍉', //站点标题
   titleTemplate: ":title - Kano's little shitty station",
-  description: '前端小破站 🍉', //mate标签description，多用于搜索引擎抓取摘要
-  head: [['link', { rel: 'icon', href: '/Kano.jpg' }]],
+  description: '前端杂货铺', //mate标签description，多用于搜索引擎抓取摘要
+  head: [['link', { rel: 'icon', href: '/logo.svg' }]],
   lastUpdated: true,
   markdown: {
     lineNumbers: true,
