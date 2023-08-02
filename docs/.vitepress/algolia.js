@@ -1,7 +1,7 @@
 export default {
-  appId: '0MYKEPO1JT',
-  apiKey: 'ee181fc7df5635477bafb70202b1ab38',
-  indexName: 'docs',
+  appId: '70ZJ8HBEPD',
+  apiKey: '8b34ab3e0b34d2f17e245ade40760734',
+  indexName: 'virkano',
   placeholder: '请输入关键词',
   translations: {
     button: {

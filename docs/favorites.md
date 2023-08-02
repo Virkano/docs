@@ -5,6 +5,7 @@
 > 如果你也有觉得不错的网站以及工具，欢迎来各位推荐
 
 <script setup>
+  import animationNav from './favorites/animation.js'
   import cssNav from './favorites/css.js'
   import toolNav from './favorites/tool.js'
   import operateNav from './favorites/operate.js'
@@ -15,6 +16,10 @@
   import interviewNav from './favorites/interview.js'
   import NavCard from "./.vitepress/theme/components/NavCard.vue"
 </script>
+
+## 动画库
+
+<NavCard :navData=animationNav />
 
 ## CSS
 
