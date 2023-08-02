@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     Badge: typeof import('./theme/components/Badge.vue')['default']
     'Bi:github': typeof import('~icons/bi/github')['default']
+    CloudinaryImg: typeof import('./theme/components/CloudinaryImg.vue')['default']
     Contributors: typeof import('./theme/components/Contributors.vue')['default']
     CopyRight: typeof import('./theme/components/CopyRight.vue')['default']
     CustomLink: typeof import('./theme/components/CustomLink.vue')['default']

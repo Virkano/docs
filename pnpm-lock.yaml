@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@iconify/json': ^2.2.96
   dayjs: ^1.11.9
+  medium-zoom: ^1.0.8
   moment: ^2.29.4
   sass: ^1.64.0
   unocss: ^0.53.6
@@ -14,6 +15,7 @@ specifiers:
 
 dependencies:
   '@iconify/json': 2.2.96
+  medium-zoom: 1.0.8
   moment: 2.29.4
   vite: 4.4.7_sass@1.64.0
   vitepress: 1.0.0-beta.5_sass@1.64.0
@@ -1207,6 +1209,10 @@ packages:
   /mdn-data/2.0.30:
     resolution: {integrity: sha512-GaqWWShW4kv/G9IEucWScBx9G1/vsFZZJUO+tD26M8J8z3Kw5RDQjaoZe03YAClgeS/SWPOcb4nkFBTEi5DUEA==}
     dev: true
+
+  /medium-zoom/1.0.8:
+    resolution: {integrity: sha512-CjFVuFq/IfrdqesAXfg+hzlDKu6A2n80ZIq0Kl9kWjoHh9j1N9Uvk5X0/MmN0hOfm5F9YBswlClhcwnmtwz7gA==}
+    dev: false
 
   /merge-stream/2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
