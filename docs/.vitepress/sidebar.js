@@ -14,8 +14,8 @@ export default {
               link: '/weekly/guide',
             },
             {
-              text: '7 月',
-              link: '/weekly/202307',
+              text: '8 月',
+              link: '/weekly/202308',
             },
           ],
         },

@@ -1,13 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@iconify-json/bi': ^1.1.17
-  '@iconify-json/fa6-solid': ^1.1.13
-  '@iconify-json/fe': ^1.1.6
-  '@iconify-json/ooui': ^1.1.25
-  '@iconify-json/radix-icons': ^1.1.10
-  '@iconify-json/tabler': ^1.1.84
-  '@iconify-json/teenyicons': ^1.1.5
+  '@iconify/json': ^2.2.96
   dayjs: ^1.11.9
   moment: ^2.29.4
   sass: ^1.64.0
@@ -19,19 +13,13 @@ specifiers:
   vue: ^3.3.4
 
 dependencies:
+  '@iconify/json': 2.2.96
   moment: 2.29.4
   vite: 4.4.7_sass@1.64.0
   vitepress: 1.0.0-beta.5_sass@1.64.0
   vue: 3.3.4
 
 devDependencies:
-  '@iconify-json/bi': 1.1.17
-  '@iconify-json/fa6-solid': 1.1.13
-  '@iconify-json/fe': 1.1.6
-  '@iconify-json/ooui': 1.1.25
-  '@iconify-json/radix-icons': 1.1.10
-  '@iconify-json/tabler': 1.1.84
-  '@iconify-json/teenyicons': 1.1.5
   dayjs: 1.11.9
   sass: 1.64.0
   unocss: 0.53.6_vite@4.4.7
@@ -429,51 +417,15 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@iconify-json/bi/1.1.17:
-    resolution: {integrity: sha512-wWu0uLe3STp9JiE7TIZLvlZwQ7DJkup8lr59A4Ayl6b41KLBiAxnCi8l+Ohmtkdr6auNo8UM//gO0Pcx48GhOg==}
+  /@iconify/json/2.2.96:
+    resolution: {integrity: sha512-0l8LOn8kiLr8XtJZZhu4hcVyRezU+ntsBgQzjMZaQjcqZ7tfg1KQvD9cuJenz1shIs+VI+7bS2rAhRYjok1mIw==}
     dependencies:
       '@iconify/types': 2.0.0
-    dev: true
-
-  /@iconify-json/fa6-solid/1.1.13:
-    resolution: {integrity: sha512-4rpV5lqeerkL3PBuoIYFKtOWjEIcv2q9g+lai0jSTlgzmF/hcxkozXzhhGtEjQhYqAIPR01wxlHFIhwhLN2O9w==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: true
-
-  /@iconify-json/fe/1.1.6:
-    resolution: {integrity: sha512-plBJDCJuruDvO5Wva2qwW/TxdD0GW2V62tHec5bm1sn7Y7e13O7J9tOBue/FbOdH2YJon2KvEBpaE+XTPDPOOw==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: true
-
-  /@iconify-json/ooui/1.1.25:
-    resolution: {integrity: sha512-LhyOB9BIaAlXqjWU15YGGvuLyhtfRXLH4jybPFq8J5sfrXwqLh5S7E9Js88el4yhCHQO0WhfJjC6BAENWIBSPA==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: true
-
-  /@iconify-json/radix-icons/1.1.10:
-    resolution: {integrity: sha512-7ivY9XvUe1CWsuR1qy/icK6tfl1+Xq3sh2AqQuGHNx49VCJyXQq+RRr6bqf3u36mPPzV+C8oRlfifNt8iWK2Ew==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: true
-
-  /@iconify-json/tabler/1.1.84:
-    resolution: {integrity: sha512-XliiqnH4M6tS+qIbabnqTjgfT0PiEYy+93EWgx8hKiJyKGihfiGpWBKstNGfGc785T3uR9D+jjL9GXikDOnlug==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: true
-
-  /@iconify-json/teenyicons/1.1.5:
-    resolution: {integrity: sha512-nhMUhmQIyuRh7ZMeG+P2OI8kYPly7kLgec52Ett4NvIOv9+dOkIK3Gzchvlcg/ZZlugQn/n/hAJiCgzcNnrWRQ==}
-    dependencies:
-      '@iconify/types': 2.0.0
-    dev: true
+      pathe: 1.1.1
+    dev: false
 
   /@iconify/types/2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: true
 
   /@iconify/utils/2.1.7:
     resolution: {integrity: sha512-P8S3z/L1LcV4Qem9AoCfVAaTFGySEMzFEY4CHZLkfRj0Fv9LiR+AwjDgrDrzyI93U2L2mg9JHsbTJ52mF8suNw==}
@@ -1367,7 +1319,6 @@ packages:
 
   /pathe/1.1.1:
     resolution: {integrity: sha512-d+RQGp0MAYTIaDBIMmOfMwz3E+LOZnxx1HZd5R18mmCZY0QBlK0LDZfPc8FW8Ed2DlvsuE6PRjroDY+wg4+j/Q==}
-    dev: true
 
   /perfect-debounce/1.0.0:
     resolution: {integrity: sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA==}

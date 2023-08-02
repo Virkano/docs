@@ -1,11 +1,8 @@
 # Arc 激活码
 
-<VideoLink bvId="BV1k8411876y">【编程】新一代浏览器？| Arc 浏览器初体验，越用越爽
-B 站视频传送门</VideoLink>
+新一代浏览器？| Arc 浏览器初体验
 
-hey, here’s an invite to Arc, the browser I was telling you about!
-
-分享链接：https://arc.net/gift/79d47d60
+<CustomLink title="hey, here’s an invite to Arc, the browser I was telling you about!" href="https://arc.net/gift/79d47d60" />
 
 > 最后更新时间：2023 年 2 月 24 日（周五）。
 

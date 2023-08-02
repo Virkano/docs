@@ -8,15 +8,19 @@ const { href } = defineProps({
 
 const hrefSource = computed(() => {
   if (/bilibili\.com/.test(href)) return 'bilibili'
-  if (/juejin\.cn/.test(href)) return 'juejin'
-  if (/mp\.weixin\.qq/.test(href)) return 'mpwx'
-  if (/weread\.qq\.com/.test(href)) return 'weread'
+  else if (/juejin\.cn/.test(href)) return 'juejin'
+  else if (/mp\.weixin\.qq/.test(href)) return 'mpwx'
+  else if (/weread\.qq\.com/.test(href)) return 'weread'
   else if (/youtube\.com/.test(href)) return 'youtube'
   else if (/github\.com/.test(href)) return 'github'
   else if (/zsxq\.com/.test(href)) return 'zsxq'
-  else if (/vercel\.com/.test(href)) return 'vercel'
+  else if (/vercel/.test(href)) return 'vercel'
   else if (/next[-]?js/.test(href)) return 'nextjs'
-  else return 'default'
+  else if (/typescript/.test(href)) return 'typescript'
+  else if (/react[-]?query/.test(href)) return 'react-query'
+  else if (/react/.test(href)) return 'react'
+  else if (/stackoverflow/.test(href)) return 'stackoverflow'
+  else return 'web'
 })
 console.log(hrefSource)
 </script>
@@ -30,7 +34,7 @@ console.log(hrefSource)
       </span>
       <div class="flex item-center justify-between">
         <div class="flex items-center gap-1 w-full max-w-[75%]">
-          <tabler:brand-bilibili v-if="hrefSource === 'bilibili'" class="text-blue-600 w-8 h-8" />
+          <!-- <tabler:brand-bilibili v-if="hrefSource === 'bilibili'" class="text-blue-600 w-8 h-8" /> -->
           <uiw:weixin v-if="hrefSource === 'weread'" class="text-blue-600 w-8 h-8" />
           <fe:youtube v-if="hrefSource === 'youtube'" class="text-red-600 w-8 h-8" />
           <bi:github v-if="hrefSource === 'github'" class="text-slate-600 w-7 h-7" />
@@ -39,6 +43,11 @@ console.log(hrefSource)
           <skill-icons:vercel-dark v-if="hrefSource === 'vercel'" class="text-zinc-800 w-7 h-7" />
           <teenyicons:nextjs-solid v-if="hrefSource === 'nextjs'" class="text-zinc-800 w-7 h-7" />
           <tabler:brand-juejin v-if="hrefSource === 'juejin'" class="text-blue-600 w-7 h-7" />
+          <skill-icons:typescript v-if="hrefSource === 'typescript'" class="w-7 h-7" />
+          <logos:react-query-icon v-if="hrefSource === 'react-query'" class="w-7 h-7" />
+          <skill-icons:react-dark v-if="hrefSource === 'react'" class="w-7 h-7" />
+          <skill-icons:stackoverflow-dark v-if="hrefSource === 'stackoverflow'" class="w-7 h-7" />
+          <icon-park:add-web v-if="hrefSource === 'web'" class="w-7 h-7" />
           <span class="text-ellipsis w-full whitespace-nowrap overflow-hidden text-sm opacity-75 font-500">
             {{ href }}
           </span>
