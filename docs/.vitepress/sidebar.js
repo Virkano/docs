@@ -111,14 +111,14 @@ export default {
           collapsed: true,
           items: [
             {
+              text: 'TypeScript 文章',
+              link: '/typescript/index',
+            },
+            {
               text: '🍳 基础',
               collapsible: true,
               collapsed: true,
               items: [
-                {
-                  text: 'TypeScript 文章',
-                  link: '/typescript/index',
-                },
                 {
                   text: '环境配置',
                   link: '/typescript/index1',
