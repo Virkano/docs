@@ -105,17 +105,60 @@ export default {
         //     },
         //   ],
         // },
-        // {
-        //   text: '🍅 TypeScript',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   items: [
-        //     {
-        //       text: 'TypeScript 文章',
-        //       link: '/typescript/index',
-        //     },
-        //   ],
-        // },
+        {
+          text: '📖 TypeScript',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: '🍳 基础',
+              collapsible: true,
+              collapsed: true,
+              items: [
+                {
+                  text: 'TypeScript 文章',
+                  link: '/typescript/index',
+                },
+                {
+                  text: '环境配置',
+                  link: '/typescript/index1',
+                },
+                {
+                  text: '基础类型',
+                  link: '/typescript/index2',
+                },
+                {
+                  text: '任意值any与unknown',
+                  link: '/typescript/index3',
+                },
+                {
+                  text: '接口和对象类型',
+                  link: '/typescript/index4',
+                },
+                {
+                  text: '数组类型',
+                  link: '/typescript/index5',
+                },
+                {
+                  text: '函数的类型',
+                  link: '/typescript/index6',
+                },
+                {
+                  text: '类型断言',
+                  link: '/typescript/index7',
+                },
+                {
+                  text: '声明文件',
+                  link: '/typescript/index8',
+                },
+                {
+                  text: '内置对象',
+                  link: '/typescript/index9',
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     {
@@ -190,7 +233,10 @@ export default {
       ],
     },
   ],
-  '/essay/': [{ text: '2022 年总结-内耗和放弃内耗的一年', link: '/essay/hl1' }],
+  '/essay/': [
+    { text: '2022 年总结-内耗和放弃内耗的一年', link: '/essay/hl1' },
+    { text: '音乐推荐: 威远故事', link: '/essay/hl2' },
+  ],
 }
 
 function sidebarAlgorithm() {
