@@ -16,6 +16,7 @@ declare module 'vue' {
     'EosIcons:modifiedDate': typeof import('~icons/eos-icons/modified-date')['default']
     'Fa6Solid:copyright': typeof import('~icons/fa6-solid/copyright')['default']
     'Fe:youtube': typeof import('~icons/fe/youtube')['default']
+    'FluentMdl2:apacheMavenLogo': typeof import('~icons/fluent-mdl2/apache-maven-logo')['default']
     'IconPark:addWeb': typeof import('~icons/icon-park/add-web')['default']
     'Logos:reactQueryIcon': typeof import('~icons/logos/react-query-icon')['default']
     NavCard: typeof import('./theme/components/NavCard.vue')['default']
