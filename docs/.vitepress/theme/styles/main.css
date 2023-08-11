@@ -43,6 +43,10 @@ html.dark {
   border: 1px solid var(--vp-c-brand);
 }
 
+.medium-zoom-image {
+  border-radius: 8px;
+}
+
 .VPBadge {
   display: inline-block;
   margin-left: 2px;

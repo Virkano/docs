@@ -2,7 +2,7 @@
 author: "Kano Zhao"
 date: 2022-12-10
 ---
-# item2
+# iterm2
 
 <PageInfo/>
 
