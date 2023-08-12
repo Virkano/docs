@@ -21,6 +21,7 @@ const hrefSource = computed(() => {
   else if (/react/.test(href)) return 'react'
   else if (/stackoverflow/.test(href)) return 'stackoverflow'
   else if (/mozilla/.test(href)) return 'mdn'
+  else if (/naiveui/.test(href)) return 'naiveui'
   else return 'web'
 })
 console.log(hrefSource)
@@ -50,6 +51,7 @@ console.log(hrefSource)
           <skill-icons:stackoverflow-dark v-if="hrefSource === 'stackoverflow'" class="w-7 h-7" />
           <icon-park:add-web v-if="hrefSource === 'web'" class="w-7 h-7" />
           <fluent-mdl2:apache-maven-logo v-if="hrefSource === 'mdn'" class="w-7 h-7 text-zinc-800" />
+          <logos:naiveui v-if="hrefSource === 'naiveui'" class="w-7 h-7" />
           <span class="text-ellipsis w-full whitespace-nowrap overflow-hidden text-sm opacity-75 font-500">
             {{ href }}
           </span>

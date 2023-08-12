@@ -200,6 +200,16 @@ export default {
       ],
     },
   ],
+  '/daily/': [
+    {
+      text: 'vue',
+      collapsed: false,
+      items: [
+        { text: '介绍', link: '/daily/index' },
+        { text: '解决Naive UI和Tailindcss样式覆盖问题', link: '/daily/vue/index1' },
+      ],
+    },
+  ],
   '/green/': [
     {
       text: '🎈 ACM 经历',

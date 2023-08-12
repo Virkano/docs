@@ -52,6 +52,7 @@ export default defineConfig({
           { text: '⭐ 资源导航', link: '/favorites' },
           { text: '💻 编程学习', link: '/program/' },
           { text: '🔧 编程工具', link: '/tool/' },
+          { text: '📝 日常记录', link: '/daily/' },
         ],
       },
       {
