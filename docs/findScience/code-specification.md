@@ -12,7 +12,9 @@ date: 2023-07-25
 
 ## ESLint 代码检测
 
-[ESLint](http://eslint.cn/) 可组装的JavaScript和JSX检查工具，目标是保证代码的一致性和避免错误。
+[ESLint](https://zh-hans.eslint.org/) 可组装的JavaScript和JSX检查工具，目标是保证代码的一致性和避免错误。
+
+<CustomLink title="ESLint官网" href="https://zh-hans.eslint.org/" />
 
 ### ESLint 安装
 
@@ -98,7 +100,7 @@ pnpx eslint --init
 ✅ Does your project use TypeScript? · No / Yes
 ? Where does your code run? …  (Press <space> to select, <a> to toggle all, <i> to invert selection)
 ✅ Browser
-✔️ Node
+   Node
 ```
 > Next 🍇 🦐 🪑 📗 这是在使用ESLint初始化配置时的另一个询问，用于决定你的代码将在哪里运行。
 ::: details
@@ -350,6 +352,8 @@ settings.json
 
 [Prettier](https://www.prettier.cn) 一个“有态度”的代码格式化工具。
 
+<CustomLink title="一个“有态度”的代码格式化工具" href="https://www.prettier.cn" />
+
 ### Prettier 安装
 
 SCode 插件市场搜索 ```Prettier - Code formatter``` 插件安装
@@ -450,6 +454,49 @@ VSCode 的 ```settings.json``` 配置:
 }
 ```
 
+## 解决 Eslint 和 Prettier 冲突
+
+安装插件
+
+```bash
+pnpm add eslint-config-prettier eslint-plugin-prettier -D
+```
+
+修改```.eslintrc.cjs```如下
+```js{6,7,8,23}
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  parser: 'vue-eslint-parser',
+  extends: ['eslint:recommended', 'plugin:vue/vue3-essential', 'plugin:prettier/recommended'],
+  overrides: [
+    {
+      env: {
+        node: true,
+      },
+      files: ['.eslintrc.{js,cjs}'],
+      parserOptions: {
+        sourceType: 'script',
+      },
+    },
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: ['vue', 'prettier'],
+  rules: {
+    indent: ['error', 2],
+    'linebreak-style': ['error', 'unix'],
+    quotes: ['error', 'single'],
+    semi: ['error', 'never'],
+  },
+}
+
+```
+
 ## Stylelint CSS 检测
 
 Stylelint 一个强大的 CSS linter(检查器)，可帮助您避免错误并强制执行约定。官方网站： [stylelint.io](https://stylelint.io)
@@ -463,7 +510,7 @@ VSCode 插件搜索 ```Stylelint``` 并安装
 
 安装 Stylelint 依赖
 ```bash
-pnpm install -D stylelint stylelint-config-standard stylelint-config-recommended-scss stylelint-config-recommended-vue postcss postcss-html postcss-scss stylelint-config-recess-order stylelint-config-html
+pnpm add -D stylelint stylelint-config-standard stylelint-config-recommended-scss stylelint-config-recommended-vue postcss postcss-html postcss-scss stylelint-config-recess-order stylelint-config-html
 ```
 
 ### Stylelint 配置
