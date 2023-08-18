@@ -94,17 +94,17 @@ export default {
         //     },
         //   ],
         // },
-        // {
-        //   text: '🍌 Nginx',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   items: [
-        //     {
-        //       text: 'Nginx 文章',
-        //       link: '/nginx/index',
-        //     },
-        //   ],
-        // },
+        {
+          text: '🍌 Nginx',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: 'Nginx配置指南',
+              link: '/nginx/index',
+            },
+          ],
+        },
         {
           text: '📖 TypeScript',
           collapsible: true,
@@ -116,8 +116,8 @@ export default {
             },
             {
               text: '🍳 基础',
-              collapsible: true,
-              collapsed: true,
+              collapsible: false,
+              collapsed: false,
               items: [
                 {
                   text: '环境配置',
@@ -201,12 +201,19 @@ export default {
     },
   ],
   '/daily/': [
+    { text: '介绍', link: '/daily/index' },
     {
       text: 'vue',
       collapsed: false,
       items: [
-        { text: '介绍', link: '/daily/index' },
         { text: '解决Naive UI和Tailindcss样式覆盖问题', link: '/daily/vue/index1' },
+      ],
+    },
+    {
+      text: 'js',
+      collapsed: false,
+      items: [
+        { text: '并发请求', link: '/daily/js/index1' },
       ],
     },
   ],

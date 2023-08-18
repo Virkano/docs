@@ -6,7 +6,7 @@
   --vp-c-accent: #35495e;
   --vp-c-brand: #06f;
   --vp-c-brand-dark: #3385ff;
-  --vp-c-text-code: #5d6f5d;
+  --vp-c-text-code: #3eaf7c;
   /* --vp-code-block-bg: rgba(125, 125, 125, 0.04); */
   --vp-c-disabled-bg: rgba(125, 125, 125, 0.2);
   /* fix contrast on gray cards: used by --vp-c-text-2 */
@@ -17,7 +17,7 @@
 
 .dark {
   --vp-code-block-bg: rgba(0, 0, 0, 0.2);
-  --vp-c-text-code: #c0cec0;
+  --vp-c-text-code: #3eaf7c;
   /* fix contrast on gray cards: check the same above (this is the default) */
   --vp-c-text-dark-2: rgba(235, 235, 235, 0.6);
 }
