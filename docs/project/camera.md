@@ -32,4 +32,6 @@
 
 ![camera](./camera/camera3.jpg)
 
-支持多摄像头选择
+支持多摄像头选择（我用的手机摄像头 mac联动手机）
+
+![camera](./camera/camera4.jpg)
