@@ -12,7 +12,7 @@ jobs:
         id: algolia_config
         run: echo "config=$(cat crawlerConfig.json | jq -r tostring)" >> $GITHUB_OUTPUT
       - name: Push indices to Algolia
-        uses: signcl/docsearch-scraper-action@master
+        uses: signcl/docsearch-scraper-action@main
         env:
           APP_ID: ${{ secrets.APP_ID }}
           API_KEY: ${{ secrets.API_KEY }}
