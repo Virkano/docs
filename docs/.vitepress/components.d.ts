@@ -26,8 +26,6 @@ declare module 'vue' {
     Person: typeof import('./theme/components/person.vue')['default']
     'Ph:planetFill': typeof import('~icons/ph/planet-fill')['default']
     'RadixIcons:update': typeof import('~icons/radix-icons/update')['default']
-    RouterLink: typeof import('vue-router')['RouterLink']
-    RouterView: typeof import('vue-router')['RouterView']
     'SkillIcons:reactDark': typeof import('~icons/skill-icons/react-dark')['default']
     'SkillIcons:stackoverflowDark': typeof import('~icons/skill-icons/stackoverflow-dark')['default']
     'SkillIcons:typescript': typeof import('~icons/skill-icons/typescript')['default']

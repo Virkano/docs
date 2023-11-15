@@ -157,6 +157,17 @@ export default {
                 },
               ],
             },
+            {
+              text: '🍳 进阶',
+              collapsible: false,
+              collapsed: false,
+              items: [
+                {
+                  text: '类',
+                  link: '/typescript/index10',
+                },
+              ],
+            },
           ],
         },
       ],
@@ -177,6 +188,10 @@ export default {
         {
           text: '配置 Git 提交规范',
           link: '/findScience/submit-specification',
+        },
+        {
+          text: 'unocss && icons',
+          link: '/findScience/unocss',
         },
       ],
     },
@@ -205,16 +220,12 @@ export default {
     {
       text: 'vue',
       collapsed: false,
-      items: [
-        { text: '解决Naive UI和Tailindcss样式覆盖问题', link: '/daily/vue/index1' },
-      ],
+      items: [{ text: '解决Naive UI和Tailindcss样式覆盖问题', link: '/daily/vue/index1' }],
     },
     {
       text: 'js',
       collapsed: false,
-      items: [
-        { text: '并发请求', link: '/daily/js/index1' },
-      ],
+      items: [{ text: '并发请求', link: '/daily/js/index1' }],
     },
   ],
   '/green/': [
