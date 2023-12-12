@@ -193,6 +193,10 @@ export default {
           text: 'unocss && icons',
           link: '/findScience/unocss',
         },
+        {
+          text: 'Vite 插件unplugin-auto-import使用 eslint冲突',
+          link: '/findScience/eslint-autoimportant',
+        },
       ],
     },
   ],
