@@ -7,15 +7,15 @@ export default {
         { text: '阅读须知', link: '/guide' },
         // { text: '学习圈子', link: '/zsxq' },
         {
-          text: '23 年每周学习动态',
+          text: '24 年每周学习动态',
           items: [
             {
               text: '内容介绍',
               link: '/weekly/guide',
             },
             {
-              text: '8 月',
-              link: '/weekly/202308',
+              text: '1 月',
+              link: '/weekly/202401',
             },
           ],
         },

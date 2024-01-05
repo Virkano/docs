@@ -169,7 +169,7 @@ const toggleDark = useToggle(isDark)
 
     <p text-16 mt-15 inline-flex gap-10>
       <i @click="toggleDark()" icon-btn dark:i-carbon-moon i-carbon-sun />
-      <a icon-btn i-carbon-logo-github href="https://github.com/zclzone" target="_blank" title="GitHub" />
+      <a icon-btn i-carbon-logo-github href="https://github.com/virkano" target="_blank" title="GitHub" />
     </p>
 
     <section mt-20 w-360 mx-auto flex flex-wrap justify-around p-10 card-shadow rounded-10 dark:b>
