@@ -197,6 +197,10 @@ export default {
           text: 'Vite 插件unplugin-auto-import使用 eslint冲突',
           link: '/findScience/eslint-autoimportant',
         },
+        {
+          text: '若依前端代码生成',
+          link: '/findScience/ruoyi.md',
+        },
       ],
     },
   ],
