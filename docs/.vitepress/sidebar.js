@@ -201,6 +201,10 @@ export default {
           text: '若依前端代码生成',
           link: '/findScience/ruoyi.md',
         },
+        {
+          text: '向着Vue3进发，Vue2.7升级指南',
+          link: '/findScience/vue2-vue3.md',
+        },
       ],
     },
   ],
