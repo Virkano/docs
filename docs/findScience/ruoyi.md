@@ -404,7 +404,80 @@ export default {
 ```
 :::
 
+## 项目打包
 
+打开你的项目根目录的`package.json`文件， build的指令就是打包的
+
+```javascript{4}
+{
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build:prod": "vue-cli-service build",
+    "build:stage": "vue-cli-service build --mode staging",
+    "preview": "node build/index.js --preview",
+    "lint": "eslint --ext .js,.vue src"
+  },
+}
+```
+
+但是有一个前提，这个打包命令跟你的项目的环境变量有一定关系
+
+> 打包前请确认你的`.env.production` 文件中 `VUE_APP_BASE_API` 的接口前缀地址 是否跟后端发生产的接口地址一致
+
+生产的包就运行命令
+```bash
+npm run build:prod
+```
+
+打包完成后就会在你的项目根目录生成一个`dist`的文件夹，这个就是前端的生产包。
+
+### 应用路径
+
+有些特殊情况需要部署到子路径下，例如：`https://www.xxx.com/admin`，可以按照下面流程修改。
+
+* 1. 修改`vue.config.js`中的`publicPath`属性
+
+```javascript
+publicPath: process.env.NODE_ENV === "production" ? "/admin/" : "/admin/",
+```
+
+* 2. 修改`router/index.js`，添加一行`base`属性
+
+```javascript{2,3}
+export default new Router({
+  base: "/admin",
+  //base: process.env.NODE_ENV === "production" ? "/admin" : "/",
+  mode: 'history', // 去掉url中的#
+  scrollBehavior: () => ({ y: 0 }),
+  routes: constantRoutes
+})
+```
+
+* 3. `/index`路由添加获取子路径`/admin`
+
+修改`layout/components/Navbar.vue`中的`location.href`
+
+```javascript
+location.href = '/admin/index';
+```
+
+修改`utils/request.js`中的`location.href`
+
+```javascript
+location.href = '/admin/index';
+```
+
+* 4. 修改`nginx`配置
+
+```conf{1,3}
+location /admin {
+	alias   /home/jingbo/projects/pc;
+	try_files $uri $uri/ /admin/index.html;
+	index  index.html index.htm;
+}
+```
+
+打开浏览器，输入：`https://www.xxx.com/admin` 能正常访问和刷新表示成功。
 
 ## Contributors
 
