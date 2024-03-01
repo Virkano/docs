@@ -15,11 +15,11 @@ export default {
             },
             {
               text: '1 月',
-              link: '/weekly/202401',
+              link: '/weekly/202402',
             },
           ],
         },
-        { text: '资源导航', link: '/favorites' },
+        // { text: '资源导航', link: '/favorites' },
         { text: '编程学习', link: '/program/' },
         { text: 'Arc 激活码获取', link: '/arc' },
         // { text: '2023 年终总结', link: '/2023' },
