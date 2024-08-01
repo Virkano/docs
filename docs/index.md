@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: Listen 👂🏻
       link: http://music.virkano.com/
+    - theme: alt
+      text: Life 😯
+      link: http://www.virkano.com/
 
 features:
   - icon:

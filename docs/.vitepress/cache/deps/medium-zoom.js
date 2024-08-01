@@ -1,4 +1,4 @@
-import "./chunk-76J2PTFD.js";
+import "./chunk-CQXHTUV2.js";
 
 // node_modules/.pnpm/medium-zoom@1.0.8/node_modules/medium-zoom/dist/medium-zoom.esm.js
 var _extends = Object.assign || function(target) {

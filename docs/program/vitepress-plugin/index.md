@@ -24,7 +24,7 @@ date: 2023-04-18
 
 核心文件源代码在这里:
 
-[vite.config.ts 源码](https://github.com/chodocs/chodocs/blob/main/docs/vite.config.ts)
+[vite.config.js 源码](https://github.com/Virkano/docs/blob/main/docs/vite.config.js)
 
 ### 示例代码
 
@@ -32,7 +32,7 @@ date: 2023-04-18
 
 文件路径 `docs/vite.config.ts`，如下：
 
-> 遇到提示说需要安装的包，可参考 chodocs 的 `package.json` 文件中的 `devDependencies` 部分，按需安装即可。
+> 遇到提示说需要安装的包，可参考 docs 的 `package.json` 文件中的 `devDependencies` 部分，按需安装即可。
 
 ```ts
 import { resolve } from 'node:path'
@@ -89,97 +89,23 @@ export default defineConfig(async () => {
 
 可查阅官方文档使用。
 
-## 文档显示页面信息和底部贡献者
-
-上述 Vite 配置文件中，我们看到了有一个 `MarkdownTransform` 函数，这个函数是用来处理 markdown 文件的，主要是为了在每个文档页面的底部显示贡献者信息和版权信息，以及在每个文档页面的顶部显示阅读时间和字数。
-
-核心文件源代码在这里，可以点击查看:
-
-[markdownTransform.ts](https://github.com/chodocs/chodocs/blob/main/docs/.vitepress/plugins/markdownTransform.ts)
-
-### 示例代码
-
-以下是示例代码，也许是过去的某个版本的，并非一定是最新的，最新代码请查看上述源代码。
-
-文件路径 `docs/.vitepress/plugins/markdownTransform.ts`，如下：
-
-```ts {23,33,36}
-import type { Plugin } from 'vite'
-import { replacer } from '../../../scripts/utils'
-import { getReadingTime } from './../theme/utils'
-
-export function MarkdownTransform(): Plugin {
-  return {
-    name: 'chodocs-md-transform',
-    enforce: 'pre',
-    async transform(code, id) {
-      if (!id.match(/\.md\b/))
-        return null
-      // convert links to relative
-      code = code.replace(/https?:\/\/chodocs\.cn\//g, '/')
-      const [_name, i] = id.split('/').slice(-2)
-
-      // cut index.md
-      if (_name === 'docs' && i === 'index.md')
-        return code
-
-      const { footer } = await getDocsMarkdown()
-      code = replacer(code, footer, 'FOOTER', 'tail')
-      const { readTime, words } = getReadingTime(code)
-      code = code.replace(
-        /(#\s.+?\n)/,
-        `$1\n\n<PageInfo readTime="${readTime}" words="${words}"/>\n`
-      )
-
-      return code
-    },
-  }
-}
-
-export async function getDocsMarkdown() {
-  const ContributorsSection = `## Contributors
-  <Contributors/>`
-
-  // const CopyRightSection = `
-  // <CopyRight/>`
-
-  const footer = `${ContributorsSection}\n${CopyRightSection}\n`
-
-  return {
-    footer,
-  }
-}
-```
-
-这里其实就是一个 Vite 的插件，在 `docs/vite.config.ts` 中引入了这个插件。
-
-上述代码我高亮了三行代码，你会发现这里其实就是引入了 Vue 组件，为什么没见到导入呢？
-
-因为我们在上述的「**配置 Vite**」 代码中引入了 `unplugin-vue-components/vite`，如下：
-
-```ts
-import Components from 'unplugin-vue-components/vite'
-```
-
-这个插件的作用就是自动导入 Vue 组件，所以我们在上述代码中直接使用了 `Contributors` 和 `CopyRight` 这两个组件，而不需要导入。
-
 ### Contributors 组件
 
 这个组件是用来显示贡献者信息的，核心文件源代码在这里：
 
-[Contributors.vue](https://github.com/chodocs/chodocs/blob/main/docs/.vitepress/theme/components/Contributors.vue)
+[Contributors.vue](https://github.com/Virkano/docs/blob/main/docs/.vitepress/theme/components/Contributors.vue)
 
 ### CopyRight 组件
 
 这个组件是用来显示版权信息的，核心文件源代码在这里：
 
-[CopyRight.vue](https://github.com/chodocs/chodocs/blob/main/docs/.vitepress/theme/components/CopyRight.vue)
+[CopyRight.vue](https://github.com/Virkano/docs/blob/main/docs/.vitepress/theme/components/CopyRight.vue)
 
 ## 文档页面的顶部信息组件
 
 这个组件用来显示阅读时间和字数等，核心文件源代码在这里：
 
-[PageInfo.vue](https://github.com/chodocs/chodocs/blob/main/docs/.vitepress/theme/components/PageInfo.vue)
+[PageInfo.vue](https://github.com/Virkano/docs/blob/main/docs/.vitepress/theme/components/PageInfo.vue)
 
 ## 文章阅读数统计
 
