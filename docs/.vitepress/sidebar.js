@@ -205,6 +205,10 @@ export default {
           text: '向着Vue3进发，Vue2.7升级指南',
           link: '/findScience/vue2-vue3.md',
         },
+        {
+          text: 'OnlyOffice浅尝',
+          link: '/findScience/onlyOffice.md',
+        },
       ],
     },
   ],
