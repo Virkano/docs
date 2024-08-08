@@ -31,7 +31,7 @@ sudo docker run -i -t -d -p 8701:80 \
 sudo docker run -i -t -d -p 8701:80 -e JWT_ENABLED=false onlyoffice/documentserver
 ```
 
-> 进入docker 启动内置服
+> 进入docker 启动内置服务
 
 ```bash
 # 进入容器 id
@@ -61,7 +61,7 @@ exit
 
 
 
-最后访问 http://IP:8701/example 页面（这里要注意，IP 不能是 localhost 和 127.0.0.1，一定要用真实本机内网IP 来访问）。
+最后访问 http://IP:8701/example/ 页面（这里要注意，IP 不能是 localhost 和 127.0.0.1，一定要用真实本机内网IP 来访问）。
 
 
 <CustomLink title="例子(Node 服务) 根据官网例子修改后" href="https://github.com/Virkano/onlyoffice-serverdemo" />
