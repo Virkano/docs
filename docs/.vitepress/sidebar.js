@@ -243,6 +243,11 @@ export default {
       collapsed: false,
       items: [{ text: '并发请求', link: '/daily/js/index1' }],
     },
+    {
+      text: 'python',
+      collapsed: false,
+      items: [{ text: 'webdriver', link: '/daily/python/index' }],
+    },
   ],
   '/green/': [
     {
