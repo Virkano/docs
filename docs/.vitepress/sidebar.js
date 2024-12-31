@@ -72,6 +72,17 @@ export default {
             },
           ],
         },
+        {
+          text: '🥑 Nest.js',
+          collapsible: true,
+          collapsed: true,
+          items: [
+            {
+              text: 'Env 环境配置',
+              link: '/nest/config',
+            },
+          ],
+        },
         // {
         //   text: '🥑 Docker',
         //   collapsible: true,
