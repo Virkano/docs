@@ -3,17 +3,19 @@ author: "Kano Zhao"
 date: 2023-08-18
 ---
 
-# Env 环境配置 yaml文件
+# Env 环境配置
 
 <PageInfo/>
 
-## 依赖下载
+## yaml文件
+
+### 依赖下载
 
 ```bash
 pnpm add -D @nestjs/config js-yaml cross-env
 ```
 
-## 配置文件
+### 配置文件
 
 > 在src目录下创建一个 `config` 文件夹，并在其中创建一个 `dev.yaml` 文件，用于存放开发环境配置。
 
@@ -118,7 +120,7 @@ export default () => {
 
 ```
 
-## 使用config设置配置模块
+### 使用config设置配置模块
 
 ```ts{4,5,9,10,11,12,13,14}
 import { Module } from '@nestjs/common';
@@ -142,7 +144,7 @@ import configuration from './config/index';
 export class AppModule {}
 
 ```
-## 修改nest-cli.json文件 在 dist下生成 yaml 文件以供读取
+### 修改nest-cli.json文件 在 dist下生成 yaml 文件以供读取
 
 ```json{6,7,8,9}
 {
@@ -159,12 +161,12 @@ export class AppModule {}
 }
 ```
 
-## 修改 package.json文件
+### 修改 package.json文件
 ```json
 "dev": "cross-env NODE_ENV=development nest start --watch", // 开发环境
 ```
 
-## 使用
+### 使用
 ```ts{5,8}
 import { ConfigService } from '@nestjs/config';
 
@@ -174,6 +176,75 @@ export class AppService {
 
   getPort(): number {
     return this.config.get<number>('app.port');
+  }
+}
+```
+
+## 命名空间
+
+### 配置文件
+
+> config/database.config.ts
+
+```ts
+import { registerAs } from '@nestjs/config';
+export default registerAs('database', () => ({
+  host: 'localhost',
+  port: 3303,
+  password: '123456',
+}));
+
+```
+> config/index.ts
+
+```ts
+// import redisConfig from './redis.config';
+import databaseConfig from './database.config';
+
+export default [databaseConfig];
+
+```
+
+### 全局注册
+
+```ts{5,9,10,11,12}
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { ConfigModule } from '@nestjs/config';
+import config from './config/index';
+
+@Module({
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+      load: [...config],
+    }),
+  ],
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule {}
+
+```
+
+### 使用
+```ts
+import { ConfigService, ConfigType } from '@nestjs/config';
+import databaseConfig from './config/database.config';
+
+@Injectable()
+export class AppService {
+  constructor(
+    @Inject(databaseConfig.KEY)
+    private database: ConfigType<typeof databaseConfig>,
+  ) {}
+
+  get(): number {
+    // type getType<T extends () => any> = T extends () => infer U ? U : T;
+    // type database = getType<typeof databaseConfig>;
+    // return (this.database as database).port;
+    return this.database.host;
   }
 }
 ```
