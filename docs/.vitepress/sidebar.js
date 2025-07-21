@@ -5,24 +5,21 @@ export default {
       collapsed: false,
       items: [
         { text: '阅读须知', link: '/guide' },
-        // { text: '学习圈子', link: '/zsxq' },
         {
-          text: '24 年每周学习动态',
+          text: '25 年每周学习动态',
           items: [
             {
               text: '内容介绍',
               link: '/weekly/guide',
             },
             {
-              text: '1 月',
-              link: '/weekly/202402',
+              text: '7 月',
+              link: '/weekly/202507',
             },
           ],
         },
-        // { text: '资源导航', link: '/favorites' },
+        { text: '资源导航', link: '/favorites' },
         { text: '编程学习', link: '/program/' },
-        { text: 'Arc 激活码获取', link: '/arc' },
-        // { text: '2023 年终总结', link: '/2023' },
       ],
     },
     {
@@ -39,28 +36,6 @@ export default {
     {
       text: '🥚 技术栈',
       items: [
-        // {
-        //   text: '🍊 Electron',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   items: [
-        //     {
-        //       text: 'Electron 快速入门关键技术点',
-        //       link: '/electron/index',
-        //     },
-        //   ],
-        // },
-        // {
-        //   text: '🍇 Node.js',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   items: [
-        //     {
-        //       text: 'Windows 支持 heic 图片显示',
-        //       link: '/node/index',
-        //     },
-        //   ],
-        // },
         {
           text: '🍒 Vue.js',
           collapsible: true,
@@ -73,39 +48,6 @@ export default {
           ],
         },
         {
-          text: '🥑 Nest.js',
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              text: 'Env 环境配置',
-              link: '/nest/config',
-            },
-          ],
-        },
-        // {
-        //   text: '🥑 Docker',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   items: [
-        //     {
-        //       text: 'Docker 文章',
-        //       link: '/docker/index',
-        //     },
-        //   ],
-        // },
-        // {
-        //   text: '🥭 Git',
-        //   collapsible: true,
-        //   collapsed: true,
-        //   items: [
-        //     {
-        //       text: 'Git 文章',
-        //       link: '/git/index',
-        //     },
-        //   ],
-        // },
-        {
           text: '🍌 Nginx',
           collapsible: true,
           collapsed: true,
@@ -113,71 +55,6 @@ export default {
             {
               text: 'Nginx配置指南',
               link: '/nginx/index',
-            },
-          ],
-        },
-        {
-          text: '📖 TypeScript',
-          collapsible: true,
-          collapsed: true,
-          items: [
-            {
-              text: 'TypeScript 文章',
-              link: '/typescript/index',
-            },
-            {
-              text: '🍳 基础',
-              collapsible: false,
-              collapsed: false,
-              items: [
-                {
-                  text: '环境配置',
-                  link: '/typescript/index1',
-                },
-                {
-                  text: '基础类型',
-                  link: '/typescript/index2',
-                },
-                {
-                  text: '任意值any与unknown',
-                  link: '/typescript/index3',
-                },
-                {
-                  text: '接口和对象类型',
-                  link: '/typescript/index4',
-                },
-                {
-                  text: '数组类型',
-                  link: '/typescript/index5',
-                },
-                {
-                  text: '函数的类型',
-                  link: '/typescript/index6',
-                },
-                {
-                  text: '类型断言',
-                  link: '/typescript/index7',
-                },
-                {
-                  text: '声明文件',
-                  link: '/typescript/index8',
-                },
-                {
-                  text: '内置对象',
-                  link: '/typescript/index9',
-                },
-              ],
-            },
-            {
-              text: '🍳 进阶',
-              collapsible: false,
-              collapsed: false,
-              items: [
-                {
-                  text: '类',
-                  link: '/typescript/index10',
-                },
-              ],
             },
           ],
         },
@@ -193,24 +70,12 @@ export default {
           link: '/findScience/screen',
         },
         {
-          text: '约束和统一前端代码规范',
-          link: '/findScience/code-specification',
-        },
-        {
-          text: '配置 Git 提交规范',
-          link: '/findScience/submit-specification',
-        },
-        {
           text: 'unocss && icons',
           link: '/findScience/unocss',
         },
         {
           text: 'Vite 插件unplugin-auto-import使用 eslint冲突',
           link: '/findScience/eslint-autoimportant',
-        },
-        {
-          text: '若依前端代码生成',
-          link: '/findScience/ruoyi.md',
         },
         {
           text: '向着Vue3进发，Vue2.7升级指南',
@@ -723,9 +588,7 @@ function sidebarInterview() {
       collapsed: false,
       items: [
         { text: '介绍', link: '/interview/interviewer/' },
-        { text: '模拟面试 01', link: '/interview/interviewer/01' },
-        { text: '模拟面试 02', link: '/interview/interviewer/02' },
-        { text: '模拟面试 03', link: '/interview/interviewer/03' },
+        // { text: '模拟面试 01', link: '/interview/interviewer/01' },
       ],
     },
     {

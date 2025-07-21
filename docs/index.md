@@ -24,7 +24,7 @@ features:
       src: /icons/icon_electron.svg
     title: Electron
     details: 你的桌面应用开发得力助手，使用JavaScript，尽享编程之便捷！
-    link: /start/index
+    link: https://www.electronjs.org/
   - icon:
       src: /icons/icon_vue.svg
     title: Vue.js
